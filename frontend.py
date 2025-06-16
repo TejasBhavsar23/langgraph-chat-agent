@@ -48,7 +48,7 @@ if user_input:
 
     with st.spinner("🤖 Thinking..."):
         try:
-            response = requests.post("http://127.0.0.1:8000/chat", json=payload)
+            response = requests.post("https://langgraph-chat-agent.onrender.com/chat", json=payload)
             response.raise_for_status()
 
             result = response.json()
